@@ -1,0 +1,18 @@
+{
+  "name": "code-snippets",
+  "private": true,
+  "packageManager": "yarn@3.2.3",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "next": "^12.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.16",
+    "@types/react": "18.0.19"
+  }
+}
