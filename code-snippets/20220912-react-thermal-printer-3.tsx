@@ -1,6 +1,11 @@
 const receipt = (
   <Printer type="epson" characterSet="korea" width={42}>
-    <Text align="center" invert={true} bold={true} size={{ width: 1, height: 2 }}>
+    <Text
+      align="center"
+      invert={true}
+      bold={true}
+      size={{ width: 1, height: 2 }}
+    >
       React로 영수증 출력해보기
     </Text>
     <Text align="center">@ JSConf Korea 2022</Text>
