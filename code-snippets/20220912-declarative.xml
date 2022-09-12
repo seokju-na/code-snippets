@@ -1,0 +1,7 @@
+<printer cut="true">
+  <character-set value="euc-kr"/>
+  <text align="center" bold="true">
+    안녕하세요!
+  </text>
+  <new-line/>
+</printer>
