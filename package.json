@@ -3,7 +3,8 @@
   "private": true,
   "packageManager": "yarn@3.2.3",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build"
   },
   "dependencies": {
     "next": "^12.3.0",
