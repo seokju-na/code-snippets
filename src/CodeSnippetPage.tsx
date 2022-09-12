@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { CodeSnippet } from './CodeSnippet';
 import { fetchCodeSnippets } from './fetchCodeSnippets';
 
@@ -28,12 +29,15 @@ export const getStaticProps: GetStaticProps<Props, { name: string }> = async ({ 
 };
 
 export default function CodeSnippetPage({ snippet: { name, lang, code } }: Props) {
+  const router = useRouter();
+  const { padding = '0' } = router.query ?? {};
+
   return (
     <>
       <Head>
         <title>{name}</title>
       </Head>
-      <pre>
+      <pre style={{ padding: padding as string }}>
         <code className={`language-${lang}`}>{code}</code>
       </pre>
     </>
