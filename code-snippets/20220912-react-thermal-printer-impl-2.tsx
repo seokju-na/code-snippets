@@ -8,8 +8,7 @@ async function render(elem: ReactElement): Promise<Uint8Array> {
 }
 
 async function printAll(node: ReactNode, context) {
-  const children = Children.toArray(node);
-  for (const child of children) {
+  for (const child of Children.toArray(node)) {
     if (typeof child.type?.print === 'function') {
       await child.type.print(child, context);
     } else {
