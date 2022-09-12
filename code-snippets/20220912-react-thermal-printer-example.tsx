@@ -1,5 +1,3 @@
-import { Br, Cut, Line, Printer, render, Row, Text } from 'react-thermal-printer';
-
 const receipt = (
   <Printer type="epson" width={42} characterSet="korea">
     <Text size={{ width: 2, height: 2 }}>9,500원</Text>
