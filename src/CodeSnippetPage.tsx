@@ -30,14 +30,14 @@ export const getStaticProps: GetStaticProps<Props, { name: string }> = async ({ 
 
 export default function CodeSnippetPage({ snippet: { name, lang, code } }: Props) {
   const router = useRouter();
-  const { padding = '0' } = router.query ?? {};
+  const { padding = '0', fontSize = '14px' } = router.query ?? {};
 
   return (
     <>
       <Head>
         <title>{name}</title>
       </Head>
-      <pre style={{ padding: padding as string }}>
+      <pre style={{ padding: padding as string, fontSize: fontSize as string }}>
         <code className={`language-${lang}`}>{code}</code>
       </pre>
     </>
