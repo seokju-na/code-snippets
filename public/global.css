@@ -16,3 +16,7 @@ pre {
     box-shadow: none !important;
     font-family: 'JetBrains Mono',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace !important;
 }
+
+code {
+    font-family: 'JetBrains Mono',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace !important;
+}
