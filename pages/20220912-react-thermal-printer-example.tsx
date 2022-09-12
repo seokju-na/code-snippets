@@ -1,5 +1,4 @@
-export default () => {
-  const code = `import { Br, Cut, Line, Printer, render, Row, Text } from 'react-thermal-printer';
+const code = `import { Br, Cut, Line, Printer, render, Row, Text } from 'react-thermal-printer';
 
 const receipt = (
   <Printer type="epson" width={42} characterSet="korea">
@@ -35,6 +34,7 @@ const receipt = (
 const data = await render(receipt);
 `;
 
+export default () => {
   return (
     <pre>
       <code className="language-tsx">
