@@ -9,9 +9,9 @@ const receipt = (
     <Row left="결제방법" right="체크카드" />
     <Row left="카드번호" right="123456**********" />
     <Row left="할부기간" right="일시불" />
-    <Row left="결제금액" right="10,000" />
-    <Row left="부가세액" right="909" />
-    <Row left="공급가액" right="9,091" />
+    <Row left="결제금액" right="9,500" />
+    <Row left="부가세액" right="863" />
+    <Row left="공급가액" right="8,637" />
     <Line />
     <Row left="맛있는 옥수수수염차 X 2" right="11,000" />
     <Text>옵션1(500)/옵션2/메모</Text>
