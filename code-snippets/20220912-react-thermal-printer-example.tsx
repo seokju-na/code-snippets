@@ -11,12 +11,12 @@ const receipt = (
     <Row left="부가세액" right="863" />
     <Row left="공급가액" right="8,637" />
     <Line />
-    <Row left="맛있는 옥수수수염차 X 2" right="11,000" />
-    <Text>옵션1(500)/옵션2/메모</Text>
+    <Row left={<Text bold={true}>맛있는 옥수수수염차 X 2</Text>} right="11,000" />
+    <Text>옵션1(500)/옵션2/"메모"</Text>
     <Row left="(-) 할인" right="- 500" />
     <Br />
     <Line />
-    <Row left="합계" right="9,500" />
+    <Row left={<Text bold={true}>합계</Text>} right="9,500" />
     <Row left="(-) 할인 2%" right="- 1,000" />
     <Line />
     <Row left="대표" right="김대표" />
